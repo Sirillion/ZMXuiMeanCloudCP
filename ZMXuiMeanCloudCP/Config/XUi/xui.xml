@@ -4,7 +4,7 @@
 
 		// EAC:				Friendly
 
-		// VERSION:			18.3.r1
+		// VERSION:			18.3.r2
 
 		// BUILD:			A18.3B3
 
@@ -37,16 +37,14 @@
 
 <!--	// ZMXuiMeanCloudCP // Rock Crusher Category Display -->
 
-		<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_rockCrusher']/window[1]/@name">windowWorkstationCraftingList</set>
-		<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_rockCrusher']/window[3]/@name">windowWorkstationCraftingQueue</set>
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_rockCrusher']/window[@name='windowCraftingList']/@name">windowWorkstationCraftingList</set>
+		<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_rockCrusher']/window[@name='queue10CraftingQueue']/@name">windowWorkstationCraftingQueue</set>
 
-		<remove xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_rockCrusher']/window[4]" />
+		<remove xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_rockCrusher']/window[@name='windowOutput']" />
 
-		<insertAfter xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_rockCrusher']/window[3]">
+		<insertAfter xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_rockCrusher']/window[@name='windowWorkstationCraftingQueue']">
 			<window name="windowOutputWorkStation" />
 		</insertAfter>
-
-		<setattribute xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_rockCrusher']/window[@name='windowNonPagingHeader']" name="anchor">CenterTop</setattribute>
 
 
 <!--	// ZMXuiWar3zukCP // Time Display UI -->
